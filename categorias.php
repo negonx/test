@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if (isset($_SESSION['nivel_admin']) && $_SESSION['nivel_admin'] == 0) {
     header("Location: ./clientes.php");
