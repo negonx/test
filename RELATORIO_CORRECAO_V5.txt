@@ -1,0 +1,5 @@
+Correção V5 aplicada:
+- sessão unificada (authenticated/logado/logged_in_fxtream)
+- regeneração de sessão segura
+- login cria sessão compatível com páginas antigas e novas
+- correção de perda de sessão após redirecionamento

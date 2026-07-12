@@ -1,0 +1,1 @@
+Ajuste redirecionamento login: window.location.replace, cache ajax desativado e log quando resposta sem URL.

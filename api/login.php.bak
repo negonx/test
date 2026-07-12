@@ -1,0 +1,11 @@
+<?php
+require_once(__DIR__.'/../config/bootstrap.php');
+require_once('./controles/login.php');
+header('Content-Type: application/json');
+$user=$_POST['username'] ?? $_GET['username'] ?? null;
+$pass=$_POST['password'] ?? $_GET['password'] ?? null;
+if(!$user || !$pass){echo json_encode(['title'=>'Usuário e senha obrigatórios','icon'=>'error']);exit;}
+$conexao=conectar_bd();
+if(!$conexao){echo json_encode(['title'=>'Falha banco','icon'=>'error']);exit;}
+echo json_encode(login($user,$pass));
+?>

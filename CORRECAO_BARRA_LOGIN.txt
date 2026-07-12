@@ -1,0 +1,6 @@
+Correção encontrada:
+- middleware verificava $_SESSION['logado']
+- login criava apenas logged_in_fxtream
+- adicionada sessão logado=true
+- ajustado redirecionamento para window.location.replace
+- autocomplete adicionado
