@@ -7,9 +7,9 @@ class Database {
 
     public function __construct() {
         $this->host = $_ENV['DB_HOST'] ?? getenv('DB_HOST') ?: 'localhost';
-        $this->db   = $_ENV['DB_NAME'] ?? getenv('DB_NAME') ?: 'xtream_server_8_1';
-        $this->user = $_ENV['DB_USER'] ?? getenv('DB_USER') ?: '';
-        $this->pass = $_ENV['DB_PASS'] ?? getenv('DB_PASS') ?: '';
+        $this->db   = $_ENV['DB_NAME'] ?? getenv('DB_NAME') ?: 'zmzfdoiw_xtream_server_8_1';
+        $this->user = $_ENV['DB_USER'] ?? getenv('DB_USER') ?: 'zmzfdoiw_xtream_server_8_1';
+        $this->pass = $_ENV['DB_PASS'] ?? getenv('DB_PASS') ?: '30121985';
     }
 
     public function connect(): PDO {
